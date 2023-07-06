@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="action_page.php" target="_blank" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Formulário</legend>
+            <label for="fname">Name</label>
+            <input type="text" id="fname" name="nome" autofocus><br><br>
+            <label for="isenha">Senha</label>
+            <input type="password" id="isenha" nome="senha"><br><br>
+            <label for="igames">Game Favorito:</label>
+            <select name="games" id="igames" size="1" multiple>
+                <option value="League of Legends" selected>League of Legends</option>
+                <option value="Dota 2">Dota 2</option>
+                <option value="Fortnite">Fortnite</option>
+                <option value="V-Rising" >V-Rising</option>
+            </select><br><br>
+            <input list="ilista">
+            <datalist id="ilista">
+                <option value="Android"></option>
+                <option value="Windows"></option>
+                <option value="MAC-OS"></option>
+                <option value="Linux"></option>
+            </datalist><br><br>
+            <textarea name="texto" id="itexto" cols="50" rows="10"></textarea><br><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar" onclick="alert('Campos Restaurados!')">
+            <button type="button" onclick="alert('Você baixou um Vírus!!')">Downlaod</button>
+            <input type="color" name="cor" id="icor"><br><br>
+            <input type="email" name="email" id="imail">
+        </fieldset>
+    </form>
+</body>
+</html>

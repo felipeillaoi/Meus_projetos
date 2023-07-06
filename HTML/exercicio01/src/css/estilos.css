@@ -1,0 +1,45 @@
+body {
+    
+    font-family: 'Inter', sans-serif;
+    background: #0a0a0b;
+}
+
+.cabecalho {
+    font-family: 'Prata', serif;
+    height: 60px;
+    margin-right: -3%;
+    margin-top: -3%;
+    margin-left: -3%;
+}
+
+.cabecalho-itens {
+    position: absolute;
+    display: inline-block;
+    font-size: 12px;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+.cabecalho-logo{
+    float: left;
+    color: #d1d1d1;
+    font-size: 12px;
+    margin-top: 28px;
+    margin-left: 55px;
+}
+
+.cabecalho-botao a{
+float: right;
+margin-right: 100px;
+margin-top: 20px;
+text-decoration: none;
+background: #fbe750;
+padding: 8px;
+color: #0a0a0b;
+font-size: 12px;
+text-align: center;
+width: 85px;
+}

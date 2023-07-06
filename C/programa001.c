@@ -26,15 +26,9 @@ int b = 0,i;
 	return b;
 }
 
-void main()
-{
-int l;for(l = 1; l <= 100; l++)
-{
-if (l % 5 == 0)
-{
-p("\n");
-}
-p("%d ",l);}
+void main(){
+
+
 setlocale(LC_ALL,"PORTUGUESE");
 //system("cls");
 int numero,resultado;
