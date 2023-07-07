@@ -5,18 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
     <title>Documento 3</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <header>
-        <h2 class="logo">Primavera</h2>
+        <h2 class="logo">Lojas Primavera</h2>
         <nav class="cabecalho">
-            <a target="_blank" href="https://www.google.com/search?rlz=1C1CHBD_pt-PTBR863BR863&sxsrf=AB5stBi73OdJtyHC__gbBU0Gwklix_OUHA:1688677865870&q=roupa+da+loja&tbm=isch&sa=X&ved=2ahUKEwir2dai__r_AhXASLgEHRMbBmQQ0pQJegQIDBAB&biw=1366&bih=695&dpr=1">Roupas</a>
+            <a href="#">Roupas</a>
             <a href="#">Calçados</a>
             <a href="#">Promoções</a>
             <a href="#">Contato</a>
             <button class="btn-login">Login</button>
         </nav>
     </header>
-    <main class="corpo"></main>
+        <main class="principal">
+            <div class="container-fora">
+                <button class="scroll-button left-button">&lt;</button>
+                <div class="container">
+                    <img src="./imagens/flores.jpg" alt="flor">
+                    <img src="./imagens/flores2.jpg" alt="flor">
+                    <img src="./imagens/flores3.jpg" alt="flor">
+                    <img src="./imagens/flores4.jpg" alt="flor">
+                    <img src="./imagens/flores6.jpg" alt="flor">
+                    <img src="./imagens/flores7.jpg" alt="flor">
+                    <img src="./imagens/flores8.jpg" alt="flor">
+                    <img src="./imagens/flores9.jpg" alt="flor">
+                    <img src="./imagens/flores10.jpg" alt="flor">
+                    <img src="./imagens/flores11.jpg" alt="flor">
+                </div>
+                <button class="scroll-button right-button">&gt;</button>
+            </div>
+        </main>
+        <script>
+            $(document).ready(function() {
+            var container = $(".container-fora");
+            var list = $(".container");
+            var scrollStep = 300;
+
+            $(".left-button").click(function() {
+                container.animate({ scrollLeft: "-=" + scrollStep + "px" }, "slow");
+            });
+
+            $(".right-button").click(function() {
+                container.animate({ scrollLeft: "+=" + scrollStep + "px" }, "slow");
+            });
+            });
+        </script>
 </body>
 </html>
